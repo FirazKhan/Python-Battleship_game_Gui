@@ -1,0 +1,34 @@
+{
+    "board_size": 8,
+    "ships": {
+        "Carrier": 5,
+        "Battleship": 4,
+        "Cruiser": 3,
+        "Submarine": 3,
+        "Destroyer": 2
+    },
+    "grid_letters": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 3,
+        "E": 4,
+        "F": 5,
+        "G": 6,
+        "H": 7
+    },
+    "instructions": {
+        "objective": "The goal of the game is to sink all of your opponent's ships before they sink all of yours.",
+        "setup": [
+            "Each player has an 8x8 grid (labeled with letters A-H and numbers 1-8) and a fleet of ships.",
+            "Players secretly place their ships on their grid either horizontally or vertically. Ships cannot overlap or be placed diagonally."
+        ],
+        "gameplay": [
+            "Players take turns calling out coordinates (e.g., B6) in an attempt to hit their opponent's ships.",
+            "The opponent responds with 'hit' if a ship occupies the coordinates or 'miss' if there is no ship.",
+            "The player marks their own board with '-' for a miss and 'X' for a hit.",
+            "When all of the squares of a ship have been hit, the ship is sunk, and the player must announce which ship was sunk."
+        ],
+        "winning": "The game continues until one player has sunk all of their opponent's ships. That player is declared the winner."
+    }
+} 
